@@ -1,0 +1,12 @@
+# Só o site publicado e o workflow entram no repositório.
+# Material de referência fica local: contém dados que não podem ser públicos.
+/01-bolha/
+/02-projetos/
+/03-portfolio/
+/assets/
+/README.md
+/PROMPT-CLAUDE-CODE.md
+
+.DS_Store
+Thumbs.db
+node_modules/

@@ -1,0 +1,98 @@
+{
+  "projects": [
+    {
+      "id": "agenda-salao",
+      "component": "AgendaSalao",
+      "tags": ["Site", "Sistema"],
+      "benefit": "Site e agenda online para um salão de beleza em São Gonçalo. A cliente marca em menos de um minuto.",
+      "media": {
+        "type": "image",
+        "src": "assets/img/projeto-salao-site.webp",
+        "alt": "Página inicial do site do salão, em preto e dourado, com o título Seu horário, do seu jeito.",
+        "width": 1280,
+        "height": 557
+      },
+      "link": "https://www.estudioellas.com.br",
+      "linkLabel": "Ver site no ar",
+      "challenge": "Todo agendamento era feito na mão, pelo WhatsApp. Ninguém tinha uma visão clara da agenda de cada profissional.",
+      "solution": [
+        "Site com identidade premium em preto e dourado, pensado para o celular.",
+        "Agendamento em três passos: serviço, profissional e horário.",
+        "Painel com agenda mensal e diária, uma cor por profissional e filtro por profissional.",
+        "Taxa de ocupação por dia, folgas, bloqueios e horários de funcionamento.",
+        "Cadastro de serviços e equipe, lista de interessadas e página de indicadores."
+      ],
+      "result": null,
+      "TODO": "Resultado pendente. Confirmar com Matheus o número de agendamentos online antes de publicar. Trocar a mídia por vídeo de 10 a 15 s do site rolando. Adicionar print do painel com dados fictícios."
+    },
+    {
+      "id": "barbearia-assinatura",
+      "component": "BarbeariaAssinatura",
+      "tags": ["Site"],
+      "benefit": "Um site só para uma barbearia por assinatura com duas unidades, cada uma com seus planos e equipe.",
+      "media": {
+        "type": "placeholder",
+        "label": "site da barbearia",
+        "alt": "Espaço reservado para o print do site da barbearia."
+      },
+      "link": "https://barbeariadoyago.com.br",
+      "linkLabel": "Ver site no ar",
+      "challenge": "Explicar um modelo de assinatura e duas unidades, com planos, equipes e contatos diferentes, sem confundir o cliente.",
+      "solution": [
+        "Seletor de unidade que troca os planos e a equipe exibidos.",
+        "Seção com a história do fundador, do corredor de casa até duas unidades.",
+        "Agendamento explicado em quatro passos, com mockup do app.",
+        "Galeria, endereços com mapa, horários e telefones por unidade.",
+        "SEO local e Open Graph configurados."
+      ],
+      "result": null,
+      "TODO": "Resultado pendente. Pedir número ou depoimento ao cliente. Falta print ou vídeo do site em assets/img/projeto-barbearia.webp."
+    },
+    {
+      "id": "inbox-whatsapp",
+      "component": "InboxWhatsApp",
+      "tags": ["Sistema"],
+      "benefit": "Plataforma de atendimento para um correspondente bancário. Vários números e vendedores numa inbox só.",
+      "media": {
+        "type": "placeholder",
+        "label": "inbox de atendimento",
+        "alt": "Espaço reservado para o print da inbox, com dados fictícios."
+      },
+      "link": null,
+      "linkLabel": null,
+      "challenge": "Vários números de WhatsApp e vários vendedores. Os leads se perdiam entre celulares e ninguém sabia quem atendia quem.",
+      "solution": [
+        "Inbox centralizada com vários números.",
+        "Status de conversa: aberta, em atendimento, aguardando e encerrada.",
+        "Atribuição de vendedor, etiquetas e filtros por número, vendedor e etiqueta.",
+        "Disparos em massa e discadora integrada.",
+        "Dashboard com métricas por número e por vendedor, e gestão de usuários."
+      ],
+      "result": null,
+      "TODO": "Resultado pendente. Falta print com dados fictícios em assets/img/projeto-inbox.webp. Nunca usar o print original."
+    },
+    {
+      "id": "gestao-corban",
+      "component": "GestaoCorban",
+      "tags": ["Sistema"],
+      "benefit": "Sistema de gestão para correspondente bancário. Metas, comissões e carteira na mesma tela.",
+      "media": {
+        "type": "placeholder",
+        "label": "dashboard de gestão",
+        "alt": "Espaço reservado para o print do dashboard, com dados fictícios."
+      },
+      "link": null,
+      "linkLabel": null,
+      "challenge": "A operação vivia em planilhas e sistemas soltos. Não havia visão de metas, comissões nem carteira.",
+      "solution": [
+        "Dashboard com clientes, atendimentos, valor liberado, comissão gerada e comissão a pagar a parceiros.",
+        "Meta mensal da loja com barra de progresso.",
+        "Alertas de carteira: clientes aguardando nova margem e contratos elegíveis a refinanciamento.",
+        "Resultado por canal de origem: balcão, tráfego pago, parceria e WhatsApp.",
+        "Filtro por período e vendedor, com gestão de clientes, simulações, parceiros e caixa."
+      ],
+      "result": null,
+      "TODO": "Resultado pendente. Só usar números com autorização. Falta print com dados fictícios em assets/img/projeto-corban.webp. Nunca usar o print original."
+    }
+  ]
+}
