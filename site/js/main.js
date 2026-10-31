@@ -55,7 +55,7 @@
   const hideLoader = () => { loader.remove(); startEditor(); };
 
   if (reduced || !hasGsap) {
-    hideLoader();
+    queueMicrotask(hideLoader); // espera o resto do script inicializar
   } else {
     let n = 0;
     const tick = setInterval(() => {
