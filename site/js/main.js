@@ -34,10 +34,19 @@
     if (hasGsap) ScrollTrigger.getAll().forEach(st => st.kill());
   }
 
+  // Seções com content-visibility mudam de altura no caminho. Corrige o destino no fim.
   const scrollToTarget = target => {
-    if (lenis) lenis.scrollTo(target, { offset: -24 });
+    if (lenis) lenis.scrollTo(target, { offset: -24, onComplete: () => lenis.scrollTo(target, { offset: -24, duration: .5 }) });
     else target.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth' });
   };
+
+  if (hasGsap && !reduced) {
+    let refreshTimer;
+    new ResizeObserver(() => {
+      clearTimeout(refreshTimer);
+      refreshTimer = setTimeout(() => ScrollTrigger.refresh(), 200);
+    }).observe(document.body);
+  }
 
   /* ---------- 1. Loader ---------- */
   const loader = $('.loader');
@@ -50,7 +59,7 @@
   } else {
     let n = 0;
     const tick = setInterval(() => {
-      n = Math.min(100, n + 4 + Math.ceil(Math.random() * 8));
+      n = Math.min(100, n + 6 + Math.ceil(Math.random() * 8));
       loaderNum.textContent = n;
       loaderFill.style.setProperty('--fill', n);
       if (n < 100) return;
@@ -61,7 +70,7 @@
         .to(loader, { yPercent: -100, duration: .8 }, .2)
         .from('.hero__copy > *', { y: 48, duration: 1.1, stagger: .07 }, .35)
         .from('.editor', { y: 64, opacity: 0, duration: 1.1 }, .5);
-    }, 40);
+    }, 30);
   }
 
   /* ---------- 2. Header ilha + menu mobile ---------- */

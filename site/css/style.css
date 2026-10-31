@@ -698,6 +698,13 @@ strong { color: var(--text); font-weight: 600; }
   .footer__meta:last-child { grid-column: 2; grid-row: 3; }
 }
 
+/* ---------- Render sob demanda ---------- */
+/* Seções fora da tela só fazem layout quando chegam perto. */
+.manifesto, .about, .services, .works, .process, .term-sec, .faq, .contact {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 1100px;
+}
+
 /* ---------- Reveal ---------- */
 .js .reveal {
   opacity: 0; transform: translateY(64px); filter: blur(12px);
