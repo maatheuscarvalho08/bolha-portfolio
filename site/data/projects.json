@@ -2,13 +2,16 @@
   "projects": [
     {
       "id": "agenda-salao",
-      "component": "AgendaSalao",
-      "tags": ["Site", "Sistema"],
-      "benefit": "Site e agenda online para um salão de beleza em São Gonçalo. A cliente marca em menos de um minuto.",
+      "component": "StudioEllas",
+      "tags": [
+        "Site",
+        "Sistema"
+      ],
+      "benefit": "Site e agenda online para o Studio Ellas, salão de beleza em Alcântara, São Gonçalo. A cliente marca em menos de um minuto.",
       "media": {
         "type": "image",
         "src": "assets/img/projeto-salao-site.webp",
-        "alt": "Página inicial do site do salão, em preto e dourado, com o título Seu horário, do seu jeito.",
+        "alt": "Página inicial do site do Studio Ellas, em preto e dourado, com o título Seu horário, do seu jeito.",
         "width": 1280,
         "height": 557
       },
@@ -27,13 +30,17 @@
     },
     {
       "id": "barbearia-assinatura",
-      "component": "BarbeariaAssinatura",
-      "tags": ["Site"],
-      "benefit": "Um site só para uma barbearia por assinatura com duas unidades, cada uma com seus planos e equipe.",
+      "component": "BarbeariaDoYago",
+      "tags": [
+        "Site"
+      ],
+      "benefit": "Um site só para a Barbearia do Yago, por assinatura, com duas unidades e planos e equipe de cada uma.",
       "media": {
-        "type": "placeholder",
-        "label": "site da barbearia",
-        "alt": "Espaço reservado para o print do site da barbearia."
+        "type": "image",
+        "src": "assets/img/projeto-barbearia.webp",
+        "alt": "Página inicial do site da Barbearia do Yago, com o título Sua barbearia por assinatura.",
+        "width": 1280,
+        "height": 737
       },
       "link": "https://barbeariadoyago.com.br",
       "linkLabel": "Ver site no ar",
@@ -46,12 +53,14 @@
         "SEO local e Open Graph configurados."
       ],
       "result": null,
-      "TODO": "Resultado pendente. Pedir número ou depoimento ao cliente. Falta print ou vídeo do site em assets/img/projeto-barbearia.webp."
+      "TODO": "Resultado pendente. Pedir número ou depoimento ao Yago. Trocar a mídia por vídeo de 10 a 15 s do site rolando."
     },
     {
       "id": "inbox-whatsapp",
       "component": "InboxWhatsApp",
-      "tags": ["Sistema"],
+      "tags": [
+        "Sistema"
+      ],
       "benefit": "Plataforma de atendimento para um correspondente bancário. Vários números e vendedores numa inbox só.",
       "media": {
         "type": "placeholder",
@@ -74,7 +83,9 @@
     {
       "id": "gestao-corban",
       "component": "GestaoCorban",
-      "tags": ["Sistema"],
+      "tags": [
+        "Sistema"
+      ],
       "benefit": "Sistema de gestão para correspondente bancário. Metas, comissões e carteira na mesma tela.",
       "media": {
         "type": "placeholder",
