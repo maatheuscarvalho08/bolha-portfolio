@@ -26,7 +26,17 @@
         "Cadastro de serviços e equipe, lista de interessadas e página de indicadores."
       ],
       "result": null,
-      "TODO": "Resultado pendente. Confirmar com Matheus o número de agendamentos online antes de publicar. Trocar a mídia por vídeo de 10 a 15 s do site rolando. Adicionar print do painel com dados fictícios."
+      "TODO": "Resultado pendente. Confirmar com Matheus o número de agendamentos online antes de publicar. Trocar a mídia por vídeo de 10 a 15 s do site rolando.",
+      "gallery": [
+        {
+          "type": "image",
+          "src": "assets/img/projeto-salao-painel.webp",
+          "alt": "Painel de agenda mensal do Studio Ellas, com uma cor por profissional. Dados fictícios.",
+          "width": 1280,
+          "height": 658,
+          "fictional": true
+        }
+      ]
     },
     {
       "id": "barbearia-assinatura",
@@ -63,9 +73,12 @@
       ],
       "benefit": "Plataforma de atendimento para um correspondente bancário. Vários números e vendedores numa inbox só.",
       "media": {
-        "type": "placeholder",
-        "label": "inbox de atendimento",
-        "alt": "Espaço reservado para o print da inbox, com dados fictícios."
+        "type": "image",
+        "src": "assets/img/projeto-inbox.webp",
+        "alt": "Dashboard da plataforma de atendimento com conversas abertas, não respondidas e conversas recentes. Dados fictícios.",
+        "width": 1280,
+        "height": 676,
+        "fictional": true
       },
       "link": null,
       "linkLabel": null,
@@ -78,7 +91,7 @@
         "Dashboard com métricas por número e por vendedor, e gestão de usuários."
       ],
       "result": null,
-      "TODO": "Resultado pendente. Falta print com dados fictícios em assets/img/projeto-inbox.webp. Nunca usar o print original."
+      "TODO": "Resultado pendente. Print recriado com dados fictícios."
     },
     {
       "id": "gestao-corban",
@@ -88,9 +101,12 @@
       ],
       "benefit": "Sistema de gestão para correspondente bancário. Metas, comissões e carteira na mesma tela.",
       "media": {
-        "type": "placeholder",
-        "label": "dashboard de gestão",
-        "alt": "Espaço reservado para o print do dashboard, com dados fictícios."
+        "type": "image",
+        "src": "assets/img/projeto-corban.webp",
+        "alt": "Dashboard de gestão com valor liberado, comissões, meta da loja e resultado por canal. Dados fictícios.",
+        "width": 1280,
+        "height": 633,
+        "fictional": true
       },
       "link": null,
       "linkLabel": null,
@@ -103,7 +119,7 @@
         "Filtro por período e vendedor, com gestão de clientes, simulações, parceiros e caixa."
       ],
       "result": null,
-      "TODO": "Resultado pendente. Só usar números com autorização. Falta print com dados fictícios em assets/img/projeto-corban.webp. Nunca usar o print original."
+      "TODO": "Resultado pendente. Só usar números reais com autorização. Print recriado com dados fictícios."
     }
   ]
 }

@@ -265,10 +265,12 @@
   const pad = n => String(n).padStart(2, '0');
   const componentName = p => `<span class="br">&lt;</span>${esc(p.component)}<span class="br"> /&gt;</span>`;
 
-  function mediaHTML(p, eager) {
-    const m = p.media;
+  // Selo para telas recriadas com dados de demonstração
+  const fictBadge = m => m.fictional ? '<span class="fict">dados fictícios</span>' : '';
+
+  function mediaHTML(m, eager) {
     if (m.type === 'image') {
-      return `<img src="${esc(m.src)}" alt="${esc(m.alt)}" width="${m.width}" height="${m.height}" loading="${eager ? 'eager' : 'lazy'}" decoding="async">`;
+      return `<img src="${esc(m.src)}" alt="${esc(m.alt)}" width="${m.width}" height="${m.height}" loading="${eager ? 'eager' : 'lazy'}" decoding="async">${fictBadge(m)}`;
     }
     if (m.type === 'video') {
       return `<video src="${esc(m.src)}" ${m.poster ? `poster="${esc(m.poster)}"` : ''} muted loop playsinline preload="none" aria-label="${esc(m.alt)}"></video>`;
@@ -284,7 +286,7 @@
         <h3 class="work__name">${componentName(p)}</h3>
         <p class="work__benefit">${esc(p.benefit)}</p>
         <button class="work__open" type="button" data-i="${i}" aria-label="Ver case ${esc(p.component)}: desafio, solução e resultado">
-          <div class="work__media">${mediaHTML(p)}</div>
+          <div class="work__media">${mediaHTML(p.media)}</div>
           <span class="work__cta">Ver case →</span>
         </button>
         ${p.link
@@ -323,7 +325,8 @@
       <div class="work__meta"><span>${pad(i + 1)}/${pad(projects.length)}</span><span class="work__tags">${p.tags.map(t => `<span>${esc(t)}</span>`).join('')}</span></div>
       <h2 id="case-title">${componentName(p)}</h2>
       <p>${esc(p.benefit)}</p>
-      <div class="case__media">${mediaHTML(p, true)}</div>
+      <div class="case__media">${mediaHTML(p.media, true)}</div>
+      ${(p.gallery || []).map(g => `<div class="case__media">${mediaHTML(g)}</div>`).join('')}
       <h3>[ Desafio ]</h3>
       <p>${esc(p.challenge)}</p>
       <h3>[ Solução ]</h3>
