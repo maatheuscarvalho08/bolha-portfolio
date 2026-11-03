@@ -469,34 +469,16 @@ strong { color: var(--text); font-weight: 600; }
   border: 1px solid rgba(255, 255, 255, .35); color: #fff;
 }
 .svc__media {
-  border-radius: var(--radius); overflow: hidden; aspect-ratio: 16 / 10;
+  border-radius: var(--radius); overflow: hidden;
   background: var(--cobalt-d);
   box-shadow: 0 30px 60px -30px rgba(0, 10, 40, .6);
 }
-.svc__media img { width: 100%; height: 100%; object-fit: cover; object-position: top; transition: transform .9s var(--ease); }
+.svc__media { position: relative; }
+.svc__media img { width: 100%; height: auto; transition: transform .9s var(--ease); }
 .svc:hover .svc__media img { transform: scale(1.04); }
 @media (min-width: 960px) {
   .svc { grid-template-columns: 80px 1fr 1.1fr; gap: 40px; align-items: start; padding: 56px 0; }
 }
-
-/* Placeholder de painel: sem dados, só estrutura */
-.ph--dash {
-  position: relative; width: 100%; height: 100%;
-  display: grid; grid-template-columns: 18% 1fr; grid-template-rows: auto 1fr auto;
-  gap: 4%; padding: 5%;
-  background: linear-gradient(160deg, #0b2a66, #061a42);
-  transition: transform .9s var(--ease);
-}
-.svc:hover .ph--dash { transform: scale(1.04); }
-.ph__side { grid-row: 1 / 4; border-radius: 10px; background: rgba(255, 255, 255, .06); }
-.ph__row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6%; }
-.ph__row i { height: 42px; border-radius: 10px; background: rgba(255, 255, 255, .08); }
-.ph__chart { display: flex; align-items: flex-end; gap: 5%; padding: 4%; border-radius: 10px; background: rgba(255, 255, 255, .05); }
-.ph__chart b { flex: 1; height: var(--h); border-radius: 6px 6px 2px 2px; background: linear-gradient(180deg, #5b95ff, rgba(91, 149, 255, .25)); }
-.ph__list { display: grid; gap: 8px; }
-.ph__list i { height: 10px; border-radius: 6px; background: rgba(255, 255, 255, .08); }
-.ph__list i:nth-child(2) { width: 80%; }
-.ph__list i:nth-child(3) { width: 60%; }
 
 /* ---------- 8. Projetos ---------- */
 .works { padding: var(--sec) 0; }
@@ -514,13 +496,13 @@ strong { color: var(--text); font-weight: 600; }
   position: relative;
   display: block; width: 100%; text-align: left;
   border-radius: var(--radius); overflow: hidden;
-  aspect-ratio: 16 / 11;
+  aspect-ratio: 16 / 9;
   background: var(--surface);
   border: 1px solid var(--line);
 }
 .work__media { position: relative; height: 112%; top: -6%; }
 .work__media img, .work__media video, .work__media .ph {
-  width: 100%; height: 100%; object-fit: cover; object-position: left top;
+  width: 100%; height: 100%; object-fit: cover; object-position: center top;
   transform: scale(1.04); filter: saturate(.85);
   transition: transform 1.2s var(--ease), filter 1.2s var(--ease);
 }
